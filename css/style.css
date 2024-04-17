@@ -1,0 +1,619 @@
+/*
+* zero styles
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #ffe0a8;
+    --accent-color: #f7c575;
+    --red-color: red;
+    --font-size-big: 35px;
+    --font-size-mediuom: 22px;
+
+    --telephone-font-size-big: 19px;
+    --telephone-font-size-mediuom: 16px;
+}
+
+body {
+    list-style-type: disc;
+    background-image: url('../img/background.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:'Open Sans', sans-serif;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.tittle-1 .telephone {
+    display: none;
+}
+
+.tittle-1 h1, .tittle-1 h2 {
+    margin: 25px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.tittle-1 h1 {
+    margin-top: 65px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.tittle-1 h2 {
+    font-size: 30px;
+}
+
+.tittle-1 span{
+    background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container, .tittle-5-container,
+tittle-8-container, tittle-13-under {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    width: 80%;
+    border: 1px solid var(--accent-color);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.tittle-5-container {
+    backdrop-filter: none;
+}
+
+.container .left-side, .container .right-side,
+.tittle-5-container .left-side, .tittle-5-container .right-side,
+.tittle-13-under .first-left, .tittle-13-under .second-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container .left-side {
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container .right-side {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container .text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.container .photo {
+    margin-top: 30px;
+    width: 75%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container .popup-button {
+    margin-top: 30px;
+    border-color: var(--accent-color);
+    border-radius: 10px;
+    height: 60px;
+    width: 75%;
+    color: var(--secondary-color);
+    background-color: var(--red-color);
+    font-size: var(--font-size-mediuom);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container .image {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--secondary-color);
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.container .text {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.tittle-3 h2,
+.tittle-4 h2,
+.tittle-5 h2,
+.tittle-6 h2,
+.tittle-7 h2,
+.tittle-8 h2,
+.tittle-9 h2,
+.tittle-10 h2,
+.tittle-11 h2,
+.tittle-12 h4,
+.tittle-13 h2,
+.tittle-14 h2,
+.modules h4{
+    background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 25px;
+    text-align: center;
+    font-size: var(--font-size-big);
+    font-weight: bold;
+}
+
+.marked-list {
+    color: var(--primary-color);
+    width: 80%;
+    margin: 10px auto;
+    padding: 0; /* Знімаємо відступи списку */
+    list-style: none; /* Видаляємо стандартні маркери */
+}
+
+.marked-list li {
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--accent-color);
+    font-size: var(--font-size-mediuom);
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    position: relative; /* Для позиціонування псевдоелемента */
+}
+.marked-list li::before {
+    content: "•"; /* Задаємо крапочку */
+    position: absolute; /* Позиціонуємо псевдоелемент абсолютно */
+    left: 14px; /* Відступаємо крапочку від лівого краю */
+}
+
+.tittle-6-under button,
+.tittle-7-under button,
+.tittle-8 button,
+.tittle-9 button,
+.tittle-10-under button,
+.tittle-12 button,
+.tittle-13 button,
+.button-1 button {
+    display: block;
+    margin: 30px auto;
+    border-color: var(--accent-color);
+    border-radius: 10px;
+    height: 60px;
+    width: 400px;
+    color: var(--secondary-color);
+    background-color: var(--red-color);
+    font-size: var(--font-size-mediuom);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tittle-4-under img {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    width: 40%;
+    height: auto;
+    border-radius: 30px;
+}
+
+p {
+    color: var(--primary-color);
+    font-size: var(--font-size-mediuom);
+    line-height: 25px;
+}
+
+.tittle-5-container {
+    border: none;
+    backdrop-filter: none;
+}
+
+.tittle-5-container .left-side,
+.tittle-5-container .right-side {
+    margin: 20px;
+    border-radius: 30px;
+    padding: 12px;
+    font-size: var(--font-size-mediuom);
+    color: var(--primary-color);
+    width: 45%;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.tittle-5-container .left-side button,
+.tittle-5-container .right-side button {
+    width: 90%;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: var(--accent-color);
+    border-radius: 10px;
+    color: var(--primary-color);
+    font-size: 1.8vw;
+    font-weight: bold;
+    white-space: nowrap;
+    bottom: 15px
+}
+
+.tittle-5-container .left-side button {
+    background-color: var(--red-color);
+}
+.tittle-5-container .right-side button {
+    background-color: var(--accent-color);
+}
+.tittle-5-container .left-side {
+    border: 1px solid var(--red-color);
+}
+.tittle-5-container .right-side {
+    border: 1px solid var(--accent-color);
+}
+
+.tittle-14-under span, .tittle-12 {
+    display: block;
+    height: auto;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--accent-color);
+    font-size: var(--font-size-mediuom);
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    justify-content: center;
+}
+
+.tittle-14-under span p:first-child {
+    font-weight: bold;
+    background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.tittle-4-under p {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+
+.tittle-8-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; /* Рівномірно розподіляє простір між елементами */
+}
+
+.tittle-8-container > div {
+    backdrop-filter: blur(10px);
+    width: calc(33.33% - 10px); /* Розраховує ширину для кожної колонки */
+    margin-right: 10px; /* Додає зовнішній відступ між колонками */
+    border: 1px solid var(--accent-color);
+    border-radius: 30px;
+    height: auto;
+    padding: 15px;
+}
+
+.tittle-8-container > div:last-child {
+    margin-right: 0; /* Видаляє зовнішній відступ для останньої колонки */
+}
+
+.tittle-11 p {
+    display: block;
+    width: 85%;
+    margin: auto;
+}
+
+.modules button {
+    display: block; /* Змінюємо кнопку на блочний елемент */
+    margin: 0 auto; /* Автоматичні зовнішні відступи, щоб центрувати кнопку по горизонталі */
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modules {
+    border: 1px solid var(--accent-color);
+    margin: auto;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    width: 85%;
+    backdrop-filter: blur(10px);
+    padding: 15px;
+}
+
+.not-visible {
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.popup {
+    backdrop-filter: blur(10px);
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(20, 20, 20, 0.8); /* Змінений колір фону з півпрозорим */
+    padding: 20px;
+    border-radius: 30px; /* Збільшена круглість кутів */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    border: 3px solid #DDBF79;
+    width: 60%; /* Змінена ширина попапу */
+}
+
+.popup .close-button {
+    color: white;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.popup .gold {
+    color: var(--secondary-color);
+    font-size: var(--font-size-big);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.popup .button {
+    color: white;
+    background-color: var(--red-color);
+    border: 2px solid var(--accent-color);
+    font-size: var(--font-size-mediuom);
+    color: var(--secondary-color);
+    border-radius: 3px;
+    padding: 10px 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.popup-opened + .blur-background {
+    backdrop-filter: blur(10px);
+}
+
+.transparent-text {
+    margin-bottom: 19px;
+    width: 80%; /* Ширина полів вводу */
+    border-radius: 10px; /* Збільшена круглість кутів */
+    padding: 8px; /* Збільшена внутрішня відстань */
+    margin-bottom: 10px; /* Додана відстань між полями */
+    font-size: 16px;
+}
+
+.tittle-13 h5 {
+    display: flex;
+    justify-content: center; /* Вирівнювання по горизонталі по центру */
+    align-items: center; /* Вирівнювання по вертикалі по центру */
+}
+
+.tittle-13 h5 {
+
+    color: var(--primary-color);
+    font-size: var(--font-size-mediuom);
+    margin: auto;
+}
+
+.tittle-13-under {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Вирівнюємо вміст по горизонталі */
+    align-items: center; /* Вирівнюємо вміст по вертикалі */
+}
+
+
+.tittle-13-under img {
+    text-align: center;
+    width: 450px;
+    height: auto;
+    border: 1px solid var(--secondary-color);
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.popup-button {
+    margin-top: 20px; /* Відступ від останнього контейнера до кнопки */
+}
+
+@media screen and (max-width: 600px) {
+    .tittle-13-under img {
+        width: 95%;
+    }
+
+    .popup {
+        width: 95%;
+    }
+
+    .tittle-12 {
+        width: 95%;
+    }
+    .modules {
+        width: 95%;
+    }
+
+    .tittle-3 h2,
+    .tittle-4 h2,
+    .tittle-5 h2,
+    .tittle-6 h2,
+    .tittle-7 h2,
+    .tittle-8 h2,
+    .tittle-9 h2,
+    .tittle-10 h2,
+    .tittle-11 h2,
+    .tittle-13 h2,
+    .tittle-14 h2,
+    .tittle-12 h4,
+    .modules h4 {
+        font-size: var(--telephone-font-size-big);
+    }
+
+    .modules button {
+        font-size: 30px;
+    }
+
+    .tittle-4-under img {
+        width: 80%;
+    }
+
+    .container .image {
+        width: 90%
+    }
+
+    .tittle-8-container > div {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .container, .tittle-5-container, .tittle-8-container, .tittle-13-under {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+
+    .container .popup-button, .container .photo {
+        width: 90%;
+    }
+
+    .container .left-side, .container .right-side,
+    .tittle-5-container .left-side, .tittle-5-container .right-side{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tittle-1 h1 {
+        margin-top: 40px;
+        font-size: 30px;
+        font-weight: bold;
+        display: none;
+    }
+
+    .tittle-1 .telephone {
+        font-size: 7vw;
+        display: block;
+        white-space: nowrap;
+    }
+
+    .container .photo, .container .popup-button, .container .text {
+        margin-top: 10px;
+    }
+
+    .tittle-1 h2, .container .text {
+        font-size: 20px;
+    }
+
+    .button-1 button {
+        width: 270px;
+    }
+
+    .marked-list li, .popup .button {
+        font-size: var(--telephone-font-size-mediuom);
+    }
+
+    .tittle-6-under button,
+    .tittle-7-under button,
+    .tittle-8 button,
+    .tittle-9 button,
+    .tittle-10-under button,
+    .tittle-12 button,
+    .tittle-13 button,
+    .button-1 button {
+        font-size: var(--telephone-font-size-mediuom);
+        width: 90%;
+    }
+
+    p {
+        font-size: var(--telephone-font-size-mediuom);
+    }
+
+    .tittle-5-container .left-side button,
+    .tittle-5-container .right-side button {
+        font-size: var(--telephone-font-size-mediuom);
+    }
+
+    .tittle-14-under span {
+        width: 95%;
+        margin: 20px auto;
+    }
+}
+
+
