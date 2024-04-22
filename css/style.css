@@ -61,7 +61,7 @@ table {
     --primary-color: #ffffff;
     --secondary-color: #ffe0a8;
     --accent-color: #f7c575;
-    --red-color: red;
+    --red-color: #cc143a;
     --font-size-big: 35px;
     --font-size-mediuom: 22px;
 
@@ -116,6 +116,13 @@ body {
     margin: 0;
 }
 
+.extra_photo {
+    width: 100px;
+    height: auto;
+    position: relative;
+    z-index: 3;
+}
+
 .big_image {
     display: flex;
     flex-direction: column;
@@ -168,7 +175,7 @@ body {
 }
 
 .tittle-1 h1, .tittle-1 h2 {
-    background-color: rgba(0, 0, 0, 0.5);
+
     border-radius: 30px;
     margin: 25px;
     text-align: center;
@@ -176,13 +183,24 @@ body {
 }
 
 .tittle-1 h1 {
-    margin-top: 65px;
-    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.tittle-1 h1:nth-child(3) {
     font-weight: bold;
+    margin-top: 10px;
+    font-size: 65px;
+    width: auto;
+}
+
+.tittle-1 h1:nth-child(3) span {
+    font-weight: bolder;
 }
 
 .tittle-1 h2 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .tittle-1 span{
@@ -390,6 +408,7 @@ p {
 
 .tittle-5-container .left-side,
 .tittle-5-container .right-side {
+    height: auto;
     margin: 20px;
     border-radius: 30px;
     padding: 12px;
@@ -514,10 +533,11 @@ p {
 .popup {
     display: none;
     position: fixed;
+    z-index: 10;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(20, 20, 20, 0.8); /* Змінений колір фону з півпрозорим */
+    background-color: rgba(0, 0, 0, 0.9); /* Змінений колір фону з півпрозорим */
     padding: 20px;
     border-radius: 30px; /* Збільшена круглість кутів */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -525,6 +545,15 @@ p {
     text-align: center;
     border: 3px solid #DDBF79;
     width: 60%; /* Змінена ширина попапу */
+}
+
+.popup h3 {
+    margin-top: 20px;
+}
+
+.popup span {
+    color: #ec1848;
+    font-weight: bold;
 }
 
 .popup .close-button {
@@ -610,7 +639,52 @@ p {
     margin: 10px 45vw;
 }
 
+.extra_photo {
+    width: 20vw;
+    margin: 10px 30vw;
+    border-radius: 10px;
+}
+
+/* Контейнер для центрування */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Стилі для контейнера з фотографіями та підписами */
+.euqel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Стилі для фотографій */
+.euqel .photo {
+    width: 250px; /* Задаємо ширину фотографії */
+    height: auto; /* Автоматично розраховуємо висоту відповідно до пропорцій */
+    margin: 20px; /* Відступи між фотографіями */
+}
+
+/* Стилі для підписів */
+.euqel .caption {
+    font-size: var(--font-size-mediuom);
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center; /* Вирівнюємо текст по центру */
+}
+
 @media screen and (max-width: 600px) {
+    .extra_photo {
+        width: 40vw;
+        margin: 10px 20vw;
+        border-radius: 10px;
+    }
+
+    .euqel .photo {
+        width: 40vw;
+    }
 
     .tittle-3 img {
         width: 20vw;
@@ -692,15 +766,19 @@ p {
         padding: 10px;
     }
 
-    .tittle-1 h1 {
+    .tittle-1 h1:first-child {
         margin-top: 40px;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         display: none;
     }
 
+    .tittle-1 h1:nth-child(3) {
+        font-size: 45px;
+    }
+
     .tittle-1 .telephone {
-        font-size: 7vw;
+        font-size: 18px;
         display: block;
         white-space: nowrap;
     }
