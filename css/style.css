@@ -253,6 +253,11 @@ tittle-8-container, tittle-13-under {
     transform: rotate(15deg);
 }
 
+#img-dollar {
+    width: 12vw;
+    margin-bottom: 0.8vw;
+}
+
 .tittle-10 img {
     width: 18vw;
     height: auto;
@@ -675,7 +680,94 @@ p {
     text-align: center; /* Вирівнюємо текст по центру */
 }
 
+.tittle-6-under .marked-list {
+    width: 50%;
+}
+
+.tittle-9 li{
+    border: none;
+    list-style-type: decimal;
+}
+
+.container-t {
+    width: 50%;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.name-name {
+    padding: 5px;
+    text-align: center;
+    background-color: #cc143a;
+    color: var(--primary-color);
+    width: 50%;
+    height: 40px;
+    font-size: 15px;
+    margin: auto;
+    margin-top: -2.5vw;
+    transform: rotate(-5deg);
+    border-radius: 5px;
+}
+.name-name h6{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container-t h2 {
+    margin-top: 30px;
+    font-size:30px;
+    color: var(--primary-color);
+}
+
+.container-t p{
+    font-size: 18px;
+}
+
+.container-t h3 {
+    font-size:20px;
+    color: var(--accent-color);
+}
+
+.gold-border {
+    border: 1px solid var(--accent-color);
+    border-radius: 30px;
+}
+
+.red-background {
+    border: 1px solid var(--red-color);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.inner-container {
+    text-align: center;
+}
+
+img {
+    width: 87%;
+    display: block;
+    margin: 20px auto;
+}
+
+
 @media screen and (max-width: 600px) {
+    .name-name h6 {
+        font-size: 18px;
+    }
+
+    .name-name {
+        margin-top: -9vw;
+        height: 25px;
+    }
+    .container-t {
+        width: 95%;
+    }
+    .tittle-6-under .marked-list {
+        width: 95%;
+    }
+
     .extra_photo {
         width: 40vw;
         margin: 10px 20vw;
