@@ -169,7 +169,7 @@ body {
 .big_image img:nth-child(2) {
     width: 65%;
     height: auto;
-    margin-bottom: -0.1vw;
+    margin-bottom: revert-layer;
 }
 
 .tittle-1 .telephone {
