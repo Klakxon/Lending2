@@ -117,6 +117,7 @@ body {
 }
 
 
+
 .extra_photo {
     width: 100px;
     height: auto;
@@ -169,7 +170,7 @@ body {
 .big_image img:nth-child(2) {
     width: 65%;
     height: auto;
-    margin-bottom: revert-layer;
+    margin-bottom: -0.1vw;
 }
 
 .tittle-1 .telephone {
@@ -185,7 +186,7 @@ body {
 }
 
 .tittle-1 h1 {
-    margin-top: 30px;
+    margin-top: 70px;
     margin-bottom: 10px;
     font-size: 25px;
 }
@@ -765,6 +766,16 @@ img {
     text-align: center;
 }
 
+.tittle-1 h1
+
+.tittle-1 h1 {
+    margin-bottom: 30px;
+}
+
+.tittle-3-under {
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
 
 @media screen and (max-width: 600px) {
     .tittle-3-under .extra_photo:first-child {
@@ -900,9 +911,9 @@ img {
     }
 
     .tittle-1 .telephone {
-        font-size: 18px;
+        font-size: 15px;
         display: block;
-        white-space: nowrap;
+
     }
 
     .container .photo, .container .popup-button, .container .text {
