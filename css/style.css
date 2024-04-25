@@ -116,6 +116,7 @@ body {
     margin: 0;
 }
 
+
 .extra_photo {
     width: 100px;
     height: auto;
@@ -158,7 +159,7 @@ body {
 
 .big_image img:first-child {
     margin-bottom: -15vw;
-    margin-left: 50vw;
+    margin-left: 70vw;
     position: relative;
     width: 27%;
     height: auto;
@@ -646,8 +647,13 @@ p {
 
 .extra_photo {
     width: 20vw;
-    margin: 10px 30vw;
+    margin: 10px 19vw;
     border-radius: 10px;
+}
+
+.tittle-3-under .extra_photo:first-child {
+    width: 12vw;
+    margin: 10px 22.8vw;
 }
 
 /* Контейнер для центрування */
@@ -751,8 +757,31 @@ img {
     margin: 20px auto;
 }
 
+.tittle-3-under .marked-list,
+.tittle-10-under .marked-list,
+.tittle-7-under .marked-list {
+    width: 55vw;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 600px) {
+    .tittle-3-under .extra_photo:first-child {
+        width: 20vw;
+        margin: 10px 30vw;
+    }
+
+    .tittle-3-under .marked-list,
+    .tittle-10-under .marked-list,
+    .tittle-7-under .marked-list {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .big_image img:first-child {
+        margin-left: 60vw;
+    }
+
     .name-name h6 {
         font-size: 18px;
     }
